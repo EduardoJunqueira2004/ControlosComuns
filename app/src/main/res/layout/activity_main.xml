@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+    <!--Exercício Controlos Comuns:
+     1-Fazer Layout
+     2-Codificar Botão
+     3-Toast
+     4-Somar -->
+    <!--1 botão 2 edit text  e uma text view -->
+    <!--Pergunta de teste: qual é o tipo de dados de ed1 editable -->
+    <EditText
+                android:id="@+id/editText1"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:hint="Escreva um numero inteiro"
+        />
+    <EditText
+                android:id="@+id/editText2"
+                android:layout_below="@id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:hint="Escreva um numero inteiro"
+    />
+
+    <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="100dp"
+                android:text="Enviar"
+                android:onClick="somar"
+    />
+
+    <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+    />
+</LinearLayout>
